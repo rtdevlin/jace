@@ -12,4 +12,8 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery
+//= require bigtext.js
+//= require skrollr
+//= require skrollr.ie
 //= require_tree .

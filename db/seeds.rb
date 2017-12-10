@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#
+
+firsts = File.open(File.expand_path('../../lib/firsts.txt', __FILE__)).readlines
+
+firsts.each do |first|
+  First.create(first: first.chomp)
+end
+
+

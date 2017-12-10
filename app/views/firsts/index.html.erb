@@ -1,0 +1,15 @@
+<div id='content'>
+  <h1>My Firsts</h1>
+
+    <ul id='firsts' style='display: block;' class='bigtext'>
+    <% @firsts.each do |first| %>
+      <li class='name'><%= first.first %></li>
+    <% end %>
+    </ul>
+</div>
+
+<script>
+  $('#firsts').bigtext();
+</script>
+
+
