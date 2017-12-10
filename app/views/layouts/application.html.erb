@@ -10,6 +10,19 @@
 
   <body>
     <%= yield %>
-    <script>var s = skrollr.init();</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+    <script>
+$(function(){
+  WebFont.load({
+    custom: {
+      families: ['Soft Marshmallow', 'Super Mario 256']
+    },
+    active: function(){
+      $('#firsts').bigtext();
+    }
+  })
+})
+      var s = skrollr.init();
+    </script>
   </body>
 </html>
