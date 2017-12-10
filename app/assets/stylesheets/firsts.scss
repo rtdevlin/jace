@@ -2,18 +2,50 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1 {
-  font-size: 7em;
-  font-family: 'Super Mario 256';
-  padding-top: .3em;
-  padding-bottom: .5em;
-  text-align: center;
-}
 
-#content {
-  width: 45%;
-  float: right;
-  padding: 0 3em;
+@media screen and (min-width: 960px){
+  h1 {
+    font-size: 7em;
+    text-shadow: 5px 5px grey;
+    font-family: 'Super Mario 256';
+    padding-top: .3em;
+    padding-bottom: .5em;
+    text-align: center;
+  }
+  #content {
+    width: 45%;
+    float: right;
+    padding: 0 3em;
+  }
+  .name {
+    font-size: 3.5em;
+    font-family: 'Soft Marshmallow';
+    text-shadow: 5px 5px grey;
+    line-height: normal;
+  }
+}
+@media screen and (max-width: 960px){
+  #content {
+    width: 90%;
+    float: right;
+    padding: 0 3em;
+  }
+  .name {
+    font-size: 3.5em;
+    color: white;
+    font-family: 'Soft Marshmallow';
+    text-shadow: 5px 5px black;
+    line-height: normal;
+  }
+  h1 {
+    font-size: 7em;
+    color: white;
+    text-shadow: 5px 5px black;
+    font-family: 'Super Mario 256';
+    padding-top: .3em;
+    padding-bottom: .5em;
+    text-align: center;
+  }
 }
 
 #firsts {
@@ -21,19 +53,3 @@ h1 {
   margin: 0;
 }
 
-.name {
-  font-size: 3.5em;
-  font-family: 'Soft Marshmallow';
-  text-shadow: 5px 5px grey;
-  line-height: normal;
-}
-
-.bg {
-  float: left;
-  height: 100%;
-  width: 960px;
-}
-
-body {
-  margin: 0
-}
