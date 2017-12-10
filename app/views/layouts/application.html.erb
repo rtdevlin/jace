@@ -23,6 +23,9 @@ $(function(){
   })
 })
       var s = skrollr.init();
+      if(s.isMobile()){
+        s.destroy();
+      }
     </script>
   </body>
 </html>
