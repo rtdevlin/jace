@@ -11,27 +11,6 @@
   src: url('/assets/SuperMario256.ttf') format('truetype');
 }
 
-@media screen and (min-width: 960px){
-  h1 {
-    font-size: 7em;
-    text-shadow: 5px 5px grey;
-    font-family: 'Super Mario 256';
-    padding-top: .3em;
-    padding-bottom: .5em;
-    text-align: center;
-  }
-  #content {
-    width: 45%;
-    float: right;
-    padding: 0 3em;
-  }
-  .name {
-    font-family: 'Soft Marshmallow';
-    text-shadow: 5px 5px grey;
-    line-height: normal;
-  }
-}
-@media screen and (max-width: 960px){
   #content {
     width: 90%;
     float: right;
@@ -52,7 +31,6 @@
     padding-bottom: .5em;
     text-align: center;
   }
-}
 
 #firsts {
   padding: 0;
@@ -61,4 +39,27 @@
 
 body {
   margin: 0;
+}
+
+@media screen and (min-width: 960px){
+  h1 {
+    font-size: 7em;
+    text-shadow: 5px 5px grey;
+    font-family: 'Super Mario 256';
+    color: black;
+    padding-top: .3em;
+    padding-bottom: .5em;
+    text-align: center;
+  }
+  #content {
+    width: 45%;
+    float: right;
+    padding: 0 3em;
+  }
+  .name {
+    font-family: 'Soft Marshmallow';
+    color: black;
+    text-shadow: 5px 5px grey;
+    line-height: normal;
+  }
 }
