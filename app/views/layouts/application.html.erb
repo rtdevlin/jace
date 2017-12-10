@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name='viewport' content='width=device-width,inital-scale=1.0'>
   </head>
 
   <body>
@@ -25,7 +26,7 @@ $(function(){
       var s = skrollr.init();
       if(s.isMobile()){
         s.destroy();
-        $(html).css("background: !url('/assets/jace_1.jpg') top left no-repeat; background-attachment:fixed;" )
+        $('html').css('background', "url('/assets/jace_1.jpg') top left no-repeat").css('background-attachment', "fixed")
       }
     </script>
   </body>

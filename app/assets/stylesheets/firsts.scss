@@ -40,8 +40,7 @@
 body {
   margin: 0;
 }
-
-@media screen and (min-width: 960px){
+@media only screen and (min-width: 960px){
   h1 {
     font-size: 7em;
     text-shadow: 5px 5px grey;
