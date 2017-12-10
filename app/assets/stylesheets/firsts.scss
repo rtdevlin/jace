@@ -25,7 +25,12 @@ h1 {
   line-height: normal;
 }
 
+.bg {
+  float: left;
+  height: 100%;
+  width: 960px;
+}
+
 body {
-#  background: url('/assets/jace_1.jpg') top left no-repeat;
-  background-attachment: fixed;
+  margin: 0
 }
